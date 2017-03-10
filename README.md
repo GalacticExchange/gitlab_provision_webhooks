@@ -1,4 +1,4 @@
-# gitlab_provision_webhooks
+Provision/update git repository on the server on commit using Gitlab Webhooks
 
 1. A change is pushed into GitLab.
 2. GitLab webhook calls http://SERVER_NAME:9000/pull endpoint, which is provided by HookHand. 
