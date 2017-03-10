@@ -1,0 +1,14 @@
+[Unit]
+Description= Pull service 
+After=network.target
+Requires=network.target
+
+[Service]
+User=THIS_IS_THE_USER_NAME_OF_THE_GIT_USER_THAT_PULLS
+WorkingDirectory=THIS_IS_YOU_PATH/hookhand
+Environment=SCRIPTS_DIR=THIS_IS_WHERE_YOUR_PULL SCRIPT_IS
+ExecStart=/bin/bash -c 'cd /mount/ansible/hookhand && bundle exec unicorn --host THIS_IS_YOUR_SERVER_IP --port 9000 --config-file unicorn.rb'
+ExecReload=/bin/kill -HUP $MAINPID
+
+[Install]
+WantedBy=multi-user.target
