@@ -1,0 +1,3 @@
+!/usr/bin/env bash
+
+cd THIS_IS_YOUR_REPOSITORY; git pull origin master
