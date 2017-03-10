@@ -14,13 +14,6 @@ This requires installation of HookHand
 
 https://github.com/MikeMcQuaid/HookHand
 
-Here is an example pull script (trivial two lines)
-
-#!/usr/bin/env bash
-cd THIS_IS_YOUR_REPOSITORY; git pull origin master
-
-
-Name the script "pull"
 
 
 
